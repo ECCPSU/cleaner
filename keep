@@ -1,0 +1,11 @@
+(find . -type f -name '*css' | xargs sed -i 's:/uploads:./uploads:g') &&
+(find . -type f -name '*html' | xargs sed -i 's:/uploads:./uploads:g') &&
+(find . -type f -name '*js' | xargs sed -i 's:/uploads:./uploads:g') &&
+(find . -type f -name '*css' | xargs sed -i 's:http-:https-:g') &&
+(find . -type f -name '*css' | xargs sed -i 's/http:/https:/g') &&
+(find . -type f -name '*html' | xargs sed -i 's:http-:https-:g') &&
+(find . -type f -name '*html' | xargs sed -i 's/http:/https:/g') &&
+(find . -type f -name '*js' | xargs sed -i 's:http-:https-:g') &&
+(find . -type f -name '*js' | xargs sed -i 's/http:/https:/g') && echo "www.eccpsu.com" >> CNAME
+
+
