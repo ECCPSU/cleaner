@@ -8,4 +8,12 @@
 (find . -type f -name '*js' | xargs sed -i 's:http-:https-:g') &&
 (find . -type f -name '*js' | xargs sed -i 's/http:/https:/g') && echo "www.eccpsu.com" >> CNAME
 
+mv ./15074240685d9b49e7c0c6b/uploads/1/1/8/6/118626973/background-images/background-images/* /15074240685d9b49e7c0c6b/uploads/1/1/8/6/118626973/background-images/
+
+
+rm -rf ./15074240685d9b49e7c0c6b/uploads/1/1/8/6/118626973/background-images/background-images/
+
+mv ./15074240685d9b49e7c0c6b/files/theme/files/* ./15074240685d9b49e7c0c6b/files/theme/
+
+rm -rf ./15074240685d9b49e7c0c6b/files/theme/files
 
